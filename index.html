@@ -1,0 +1,88 @@
+<html>
+	<head>
+		<title>Yatzy!</title>
+		<script src="app.js"></script>
+		<link rel="stylesheet" href="./style.css" />
+	</head>
+	<body>
+		    <!-- Display information about remaining rolls -->
+		<p id="info"></p>
+
+
+		    <!-- Dice display area with click events to toggle hold status -->
+		<div id="dices"> 
+			<div class="one" onclick="togglehold(1)"></div>
+			<div class="two" onclick="togglehold(2)"></div>
+			<div class="three" onclick="togglehold(3)"></div>
+			<div class="four" onclick="togglehold(4)"></div>
+			<div class="five"onclick="togglehold(5)"></div>
+		</div>
+		
+    <!-- Button to roll the dice -->
+		<button id="roll" onclick="rollDice()">Kasta</button>
+		 <!-- Scorecard display area in a table -->
+		<div id="protocol">
+			<table>
+				<tr>
+					<th></th><th>Spelare X</th>
+				</tr>
+				<tr>
+					<th>Ettor ⚀</th><td><input id="score-ones" type="number"></td>
+				</tr>
+				<tr>
+					<th>Tvåor ⚁</th><td><input id="score-twos" type="number"></td>
+				</tr>
+				<tr>
+					<th>Treor ⚂</th><td><input id="score-threes" type="number"></td>
+				</tr>
+				<tr>
+					<th>Fyror ⚃</th><td><input id="score-fours" type="number"></td>
+				</tr>
+				<tr>
+					<th>Femor ⚄</th><td><input id="score-fives" type="number"></td>
+				</tr>
+				<tr>
+					<th>Sexor ⚅</th><td><input id="score-sixes" type="number"></td>
+				</tr>
+				<tr>
+					<th>TOTAL</th><td><input id="score-total" type="number"></td>
+				</tr>
+				<tr>
+					<th>BONUS(50)</th><td><input id="score-bonus" type="number"></td>
+				</tr>
+				<tr>
+					<th>Par</th><td><input id="score-pair" type="number"></td>
+				</tr>
+				<tr>
+					<th>Tvåpar</th><td><input id="score-two-pair" type="number"></td>
+				</tr>
+				<tr>
+					<th>Triss</th><td><input id="score-three-of-a-kind" type="number"></td>
+				</tr>
+				<tr>
+					<th>Fyrtal</th><td><input id="score-four-of-a-kind" type="number"></td>
+				</tr>
+				<tr>
+					<th>Kåk</th><td><input id="score-full-house" type="number"></td>
+				</tr>
+				<tr>
+					<th>Liten stege</th><td><input id="score-small-straight" type="number"></td>
+				</tr>
+				<tr>
+					<th>Stor stege</th><td><input id="score-large-straight" type="number"></td>
+				</tr>
+				<tr>
+					<th>Chans</th><td><input id="score-chance" type="number"></td>
+				</tr>
+				<tr>
+					<th>YATZY(50)</th><td><input id="score-yatzy" type="number"></td>
+				</tr>
+				<tr>
+					<th>TOTAL</th><td><input id="score-total-final" type="number"></td>
+				</tr>
+				</table>
+			</table>
+		</div>
+		<p id="rules"><a href="https://www.spelayatzy.se/yatzy-spelregler/">Yatzy - Spelregler</a></p>
+	</body>
+</html>

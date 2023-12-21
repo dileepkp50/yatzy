@@ -1,0 +1,37 @@
+body {
+	font-family: sans-serif;
+	font-size:22px;
+}
+
+#dices {
+	display: flex;
+	flex-direction: row;
+}
+
+#dices div {
+	width: 100px;
+	height: 100px;
+	margin: 28px;
+	text-align: center;
+	line-height: 80px;
+	font-size: 120px;
+}
+
+#dices .one::before {
+	content: "⚀"
+}
+#dices .two::before {
+	content: "⚁"
+}
+#dices .three::before {
+	content: "⚂"
+}
+#dices .four::before {
+	content: "⚃"
+}
+#dices .five::before {
+	content: "⚄"
+}
+#dices .six::before {
+	content: "⚅"
+}
